@@ -1,0 +1,32 @@
+[
+    {
+        "title":"Bmw M3",
+        "price":110040,
+        "thumbnail":"auto.png",
+        "id":0
+        },
+    {
+        "title":"Fiat 600",
+        "price":1100,
+        "thumbnail":"auto.png",
+        "id":1
+        },
+    {
+        "title":"Nissan 350z",
+        "price":170040,
+        "thumbnail":"auto.png",
+        "id":2
+        },
+    {
+        "title":"Mazda rx7",
+        "price":200040,
+        "thumbnail":"auto.png"
+        "id":3
+        },
+    {
+        "title":"Ford Focus",
+        "price":300040,
+        "thumbnail":"auto.png",
+        "id":4
+     }
+]
