@@ -1,19 +1,29 @@
 {
   "name": "c08",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "dev": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20",
-    "pug": "^3.0.2"
-  }
+    "pug": "^3.0.2",
+    "socket.io": "^4.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanJuarezzz3/CoderBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlanJuarezzz3/CoderBackend/issues"
+  },
+  "homepage": "https://github.com/AlanJuarezzz3/CoderBackend#readme",
+  "description": ""
 }

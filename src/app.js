@@ -1,8 +1,7 @@
-const express = require('express');
+/* const express = require('express');
 const app = express();
 
-app.set("view engine", "pug");
-app.set("views", "./views")
+app.set("view engine", "ejs");
 
 app.use("/static", express.static(__dirname + "public"))
 
@@ -14,10 +13,6 @@ const server = app.listen(PORT, () => {
 const { Router } = express;
 const productosRouter = new Router();
 
-productosRouter.use(express.json())
-productosRouter.use(express.urlencoded({ extended: true }))
-
-server.on("error", error => console.log(`Error en servidor ${error}`))
 
 const handleVerify=(atributo)=>{
     return (atributo!="") 
@@ -26,10 +21,7 @@ const handleVerify=(atributo)=>{
 const productos = []
 
 productosRouter.get("/", (req, res) => {
-    res.render("productos", {productos})
-})
-app.get("/", (req, res) => {
-    res.render("formulario",{titlePage:"Formulario"})
+    res.render("pages/formu",{titlePage:"Formulario"})
 })
 productosRouter.post("/", (req, res) => {
     let objeto = req.body;
@@ -45,10 +37,16 @@ productosRouter.post("/", (req, res) => {
     res.redirect('/')
 })
 
+//create subroutes
 app.use("/api/productos", productosRouter);
-
+//show index.html
 app.use('/static', express.static('public'));
 
-app.use((req, res, next) => {
-    res.status(404).send("Pagina no encontrada");
+ */
+
+const { servidor } = require('./servidor.js');
+
+const server = servidor.listen(8080, () => {
+    console.log(`conectado y escuchando en puerto ${server.address().port}`)
 })
+server.on("error", error => console.log(`Error en servidor ${error}`))
