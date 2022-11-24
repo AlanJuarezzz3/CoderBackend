@@ -1,0 +1,26 @@
+<style>
+    .table td,
+    .table th{
+        vertical-aling: middle;
+    }
+</style>
+
+{{#if productos.lenght}}
+<h2>Lista de productos</h2>
+<div class="table-responsive">
+    <table class="table table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Foto</th>
+        </tr>
+        {{#each productos}}
+        <tr>
+            <td> {{this.title}} </td>
+            <td> {{this.price}} </td>
+            <td><img width="50" src={{this.thumbnail}} alt="roto"/> </td>
+        </tr>
+        {{/earch}}
+    </table>
+</div>
+{{/if}}
